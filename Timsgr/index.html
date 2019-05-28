@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Timsgr</title>
+    <meta name="theme-color" content="#b4b4b4" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <script src="app.js"></script> 
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">  
+</head>
+
+<body>
+    <div class="all">
+        <div class="contain">
+            <div class="top">
+                <div class="enter">
+                    <div class="container">
+                        <input  type="text" id="login_username" class="login" placeholder="Type your username">
+                        <input type="password" type="text" id="login_pass" class="pass" placeholder="Type your password">
+                        <button class="enter_click" onclick="log_in_click()">Log In</button>
+                    </div>
+                </div>
+                <div class="or">
+                    <p>Log in or sign up please</p>
+                </div>
+                <div class="registration"> 
+                    <div class="container">
+                        <input class="login" type="text" id="new_username" placeholder="Type your new username">
+                        <input class="pass" type="password" type="text" id="new_pass" placeholder="Type your new password"> 
+                        <input class="rep_pass" type="password" type="text" id="rep_new_pass" placeholder="Repeat the password">
+                        <button class="sign_up" onclick="sign_up_click()">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="plan">
+                <i class="fa fa-paper-plane-o picture" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+body {
+    font: 12px/18px;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    overflow:hidden;
+}
+
+.all{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0%;
+    top:0%;
+    
+}
+.contain{
+    background:dimGray;
+    position:relative;
+    width:90%;
+    height:90%;
+    padding: 5% 5%;
+}
+.contain .top{
+/*     position:absolute; */
+    top:0%;
+    width:100%;
+    height:50%;
+}
+.contain .plan{
+    height:50%;
+    width:100%;
+}
+
+
+.contain .top .or{
+    position:relative;
+    width:30%;
+    height:100%;
+    float:left;
+    text-align:center;
+    font-size:24px;
+    color:white;
+}
+.contain .top .registration{
+    width:35%;
+    height:100%;
+    float:right;
+}
+.contain .top .registration .container{
+    position:relative;
+    margin:5% 5%;
+    width:90%;
+    height:90%;
+    text-align:center;
+}
+
+.contain .top .registration .container .login{
+    width:90%;
+    height:15%;
+    margin-top:5%;
+    font-size:16px;
+    border-radius:10px;
+    outline:none;
+    padding-left:5%;
+}
+.contain .top .registration .container .pass{
+    width:90%;
+    height:15%;
+    margin-top:5%;
+    font-size:16px;
+    border-radius:10px;
+    outline:none;
+    padding-left:5%;
+} 
+.contain .top .registration .container .rep_pass{
+    width:90%;
+    height:15%;
+    margin-top:5%;
+    font-size:16px;
+    border-radius:10px;
+    outline:none;
+    padding-left:5%;
+} 
+.contain .top .registration .container .sign_up{
+    width:40%;
+    height:20%;
+    margin-top:8%;
+    font-size:16px;
+    cursor:pointer;
+} 
+
+.contain .top .enter{    
+    width:35%;
+    height:100%;
+    float:left;
+}
+.contain .top .enter .container{
+    position:relative;
+    margin:5% 5%;
+    width:90%;
+    height:90%;
+    text-align:center;
+}
+.contain .top .enter .container .login{
+    width:90%;
+    height:15%;
+    margin-top:5%;
+    font-size:16px;
+    border-radius:10px;
+    outline:none;
+    padding-left:5%;
+}
+.contain .top .enter .container .pass{
+    width:90%;
+    height:15%;
+    margin-top:5%;
+    font-size:16px;
+    border-radius:10px;
+    outline:none;
+    padding-left:5%;
+}
+.contain .top .enter .container .enter_click{
+    width:40%;
+    height:20%;
+    margin-top:10%;
+    font-size:16px;
+    cursor:pointer;
+}
+.contain .plan .picture{
+    margin:5% 35%;
+    color:white;
+    font-size:160px;
+}
+</style>

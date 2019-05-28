@@ -1,0 +1,660 @@
+body{ 
+    
+    font:12px/18px;
+    font-family:-apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    overflow:hidden;
+    margin-left:0px;
+    margin-top:0px;
+/*     direction:rtl; */
+}
+
+/*.all{
+    width:900px;
+    height:600px;
+    position:absolute;
+}*/
+.b-container{
+    width:200px;
+    height:150px;
+    background-color:#ccc;
+    margin:0px auto;
+    padding:10px;
+    font-size:30px;
+    color:#fff;
+}
+.block_display{
+    left:0px;
+    width:100%;
+    min-height:100%;
+    background-color:rgba(0,0,0,0.5);
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+
+.block_display .add_menu{
+    margin:40px auto 0px auto;
+    width:300px;
+    height:200px;
+    padding:10px;
+    background-color:#c5c5c5;
+    border-radius:5px;
+    box-shadow:0px 0px 10px #000;
+}
+.block_display .add_menu .left{
+    float:left;
+    width:120px;
+    height:200px;
+    
+}
+.block_display .add_menu .left .place_img{
+    width:120px;
+    height:120px;
+    margin:40px 0px;
+}
+.block_display .add_menu .left .place_img .img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+}
+.block_display .add_menu .right{
+    float:right;
+    width:180px;
+    height:200px;
+    position:relative;
+}
+
+.block_display .add_menu .right .cross{
+    height:20px;
+    width:20px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    font-size:20px;
+}
+.block_display .add_menu .right .cross .but{
+    text-decoration:none;  
+    color:black;
+}
+.block_display .add_menu .right .content{
+    height:30px;
+    width:140px;
+    margin:80px 20px;
+}
+
+.block_display .add_menu .right .content .inp{
+    height:30px;
+    width:100px;
+    margin-right:5px;
+    float:left;
+}
+.block_display .add_menu .right .content .inp .inhash{
+    height:24px;
+    width:101px;
+    text-decoration:none;
+}
+.block_display .add_menu .right .content .button{
+    height:29px;
+    width:30px;
+    padding-bottom:1px;
+    float:right;
+    border-radius:50%;
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+
+
+.friends_list .title{
+    height:48px;
+    width:100%;
+    border-bottom:2px solid white;
+    /*position:absolute;*/
+}
+
+.friends_list .title .right{
+    float:right;
+    height:50px;
+    width:20%;
+    color:white;
+}
+
+.friends_list .title .right .icon{
+    font-size:25px; 
+    margin-top:30%;
+    margin-right:10%;
+    float:right;
+}
+
+.friends_list .title .left{
+    float:left;
+    height:50px;
+    width:80%;
+    color:white;
+    position:relative;
+}
+
+.friends_list .title .left .search{
+    margin:7% 5%;
+    height:60%;
+    width:90%;
+/*     border-radius:15px; */
+    color:black;
+    position:relative;
+}
+
+.friends_list .title .left .search .right{
+    right:0%;
+    width:20%;
+    height:84%;
+    font-size:20px;
+    color:black;
+    border-radius:15px;
+    position:absolute;
+    text-align:center;
+    
+}
+.friends_list .title .left .search .right .a{
+    text-decoration:none;
+    color:grey;
+}
+
+.friends_list .title .left .search .left{
+    float:left;
+    width:80%;
+    height:100%;
+}
+.friends_list .title .left .search .left .input{
+    width:90%;
+    height:70%;
+    border-radius:15px;
+    padding-left:5%;
+    padding-right:25%;
+    outline:none;
+}
+
+.friends_list .content{
+    overflow-y:auto;
+    padding-top:6%;
+    /*background:gray;*/
+    margin-top:0px;
+    height:100%;
+    width:100%;
+    
+}
+.friend{
+    position:relative;
+    /*padding-top:1%;*/
+    margin-bottom:6%;
+    height:15%;
+    border-bottom:2px solid white;
+    border-top:2px solid white; 
+    border-left:5px solid DimGrey;
+}
+.friend:hover{
+    border-left:5px solid #1E90FF;
+}
+.friend.active{
+    border-left:5px solid grey;
+    position:relative;
+    /*padding-top:1%;*/
+    margin-bottom:6%;
+    height:15%;
+    background:gray;
+    border-bottom:2px solid white;
+    border-top:2px solid white; 
+    
+}
+.delete_friend_cross{
+    float:right;
+    width:15%;
+    height:100%;
+}
+.delete_friend_cross .cross{
+    width:20px;
+    height:20px;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+}
+.delete_friend_cross .cross i{
+    font:right;
+}
+
+.friend_zone{
+    float:left;
+    width:85%;
+    height:100%;
+    cursor:pointer;
+}
+.friend_zone .left{
+    float:left;
+    width:40%;
+    height:100%;
+}
+.friend_zone .left .img_div{
+    margin:10% auto;
+    width:60px;
+    height:60px;
+    
+}
+.friend_zone .left .img_div div{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.friend_zone .left .img_div div .img{
+    position:absolute;
+    height:100%;
+    width:100%;
+    border-radius:50%;
+}
+.friend_zone .left .img_div div .status{
+    height:20px;
+    width:20px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    color:orange;
+    font-size:21px;
+}
+.friend_zone .left .img_div div .status.on{
+    height:20px;
+    width:20px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    color:Chartreuse;
+    font-size:21px;
+}
+.friend_zone .left .img_div div .status.off{
+    height:20px;
+    width:20px;
+    position:absolute;
+    bottom:0px;
+    right:0px;
+    color:DarkGray;
+    font-size:21px;
+}
+
+.friend_zone .left .img_div div .status i{
+    float:right;
+}
+.friend_zone .right{
+    float:right;
+    width:60%;
+    height:100%;
+}
+.friend_zone .right .name {
+    width:80%;
+    height:30%;
+    margin:25% 10%;
+}
+.friend_zone .right .name label{
+    width:100%;
+    height:100%;
+    font-size:20px;
+    color:white;
+}
+
+
+
+.friends_list{
+    background:DimGrey ;
+    height:100%;
+    width:25%;
+    float:left;
+    left:-20%;  
+/*     left:0%;  */
+    position:absolute;
+    transition:left 1s ease 1s;
+}
+
+.friends_list:hover{
+    position:absolute;
+    left:0%;
+    transition:left 1s ease 0.1s;
+}
+
+.chat{
+    position:relative;
+    height:100%;
+    width:100%;
+    float:right;
+}
+.chat .title{
+    position:absolute;
+    top:0px;
+    height:50px;
+    width:100%;
+    background:Grey ;
+}
+.chat .title .profile{
+    width:200px;
+    height:100%;
+    float:right;
+    color:white;
+    margin-right:30px;
+/*     border-left:1px solid white; */
+    background:gray;
+    cursor:pointer;
+}
+.chat .title .profile.active{
+    background:#bbb;
+    width:200px;
+    height:100%;
+    float:right;
+    color:white;
+    margin-right:30px;
+    cursor:pointer;
+}
+.chat .title .profile .avatar_div{
+    width:30%;
+    height:100%;
+    float:left;
+}
+.chat .title .profile .avatar_div img{
+    margin:5px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+}
+
+
+.chat .title .profile .right{
+    width:70%;
+    height:100%;
+    float:right;
+    
+}
+.chat .title .profile .right .name{
+    margin:12px auto;
+    width:100px;
+    height:30px;
+}
+.chat .title .profile .right .name label{
+    margin:5px auto;
+    font-size:20px;
+}
+
+.profile_settings{
+    background:#bfbfbf;
+    position:absolute;
+    width:200px;
+    height:150px;
+    top:-150px;
+    right:30px;   
+}
+.profile_settings.active{
+    background:#bfbfbf;
+    position:absolute;
+    width:200px;
+    height:150px;
+    top:50px;
+    right:30px;   
+}
+
+
+.profile_settings .photo_settings{
+    width:190px;
+    height:80px;
+    margin:0px 5px;
+    position:relative;
+}
+.profile_settings .photo_settings .photo{
+    width:80px;
+    height:80px;
+    margin:0px auto;
+}
+.profile_settings .photo_settings .photo img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+.profile_settings .photo_settings .remove{
+    position:absolute;
+    right:0px;
+    top:0px;
+    width:30px;
+    height:30px;
+    font-size:30px;
+}
+.profile_settings .photo_settings .remove i{
+    cursor:pointer;
+}
+.profile_settings .photo_settings .change{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    width:30px;
+    height:30px;
+    font-size:25px;
+}
+.profile_settings .photo_settings .change label{
+    cursor:pointer;
+}
+.upload_file {
+    /*opacity:0;*/
+    display:none;
+    cursor:pointer;
+}
+
+.profile_settings .information{
+    height:70px;
+    width:140px;
+    margin-left:30px;
+}
+
+.profile_settings .information .name{
+    width:100%;
+    height:25px;
+    padding-top:10px;
+    text-align:center;
+}
+.profile_settings .information .name label{
+    margin-top:50px;
+    
+}
+.profile_settings .information .id{
+    width:100%;
+    height:50%;
+    text-align:center;
+}
+
+.global_chat{
+    position:absolute;
+    height:100%;
+    width:95%;
+    left:5%;
+    float:right;
+}
+.chat .body{
+    background:DarkGray;
+    position:absolute;
+    top:50px;
+    width:100%;
+    height:95%;
+}
+.chat .body .messages{
+    width:100%;
+    height:80%;
+    
+}
+.chat .input{
+    width:100%;
+    height:14%;
+    
+    text-align:center;
+}
+.chat .input .text_field{
+    margin-left:15%;
+    width:70%;
+    height:95%;
+    margin-bottom:5%;
+}
+.chat .input .text_field .left{
+    float:left;
+    width:85%;
+    height:100%;
+}
+
+.chat .input .text_field .left textarea{
+    float:left;
+    width:95%;
+    height:70%;
+    outline:none;
+    text-decoration:none;
+    border-radius:15px;
+    padding:2%;
+    overflow-y:auto;
+}
+
+.chat .input .text_field .left textarea::-webkit-scrollbar {
+    width:1em;
+}
+.chat .input .text_field .left textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+}
+.chat .input .text_field .left textarea::-webkit-scrollbar-thumb {
+  background-color:darkgrey;
+  outline:1px solid slategrey;
+}
+.chat .input .text_field .right{
+    float:right;
+    width:15%;
+    height:100%;
+}
+
+.chat .input .text_field .right .button{
+    width:95%;
+    height:99%;
+    text-align:center;
+    border-radius:50%;
+    font-size:40px;
+    border:1px solid white;
+    color:white;
+    overflow:hidden;
+}
+.chat .input .text_field .right .button i{
+    margin-top:15%;
+    margin-right:10%;
+}
+
+.chat .body .messages .history{
+    width:100%;
+    height:95%;
+    padding-bottom:5%;
+}
+.chat .body .messages .history .replasement{
+    float:right;
+    margin-left:5%;
+    margin-right:5%;
+    width:90%;
+    height:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+.chat .body .messages .history .replasement::-webkit-scrollbar {
+    width:1em;
+}
+.chat .body .messages .history .replasement::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+}
+.chat .body .messages .history .replasement::-webkit-scrollbar-thumb {
+    background-color:Gainsboro ;
+/*   outline:1px solid slategrey; */
+/*     outline:1px solid slategrey; */
+    border-radius:10px;
+}
+.newmess{
+    width:100%;
+    float:left;
+    margin-top:10px;
+} 
+
+.newmessphoto{
+    width:40px;
+    height:40px;
+    float:left;
+/*     border:1px outset blue; */
+    border-radius:50%;
+}
+
+.newmesstext{
+    padding-top:5px;
+    padding-left:3px;
+    padding-right:5px;
+    padding-bottom:2px;
+    min-height:40px;
+    min-width:100px;
+    max-width:80%;
+    float:left;
+/*     border:1px outset blue; */
+    text-align:left;
+    background:white;
+    overflow-x:hidden;
+    margin-left:1%;
+    border-radius:10px;
+}
+
+.mymess{
+    width:100%;
+    float:right;
+    margin-top:10px;
+}
+
+.mymessphoto{   
+    width:40px;
+    height:40px;
+    float:right;
+/*     border:1px outset black; */
+    border-radius:50%;
+    /*background:red;*/
+}
+
+.mymesstext{
+    margin-right:1%;
+    padding-left:10px;
+    padding-right:5px;
+    padding-top:5px;
+    min-height:40px;
+    min-width:100px;
+    max-width:80%;
+    float:right;
+/*     border:1px outset blue; */
+    background:white;
+    overflow-x:hidden;
+    border-radius:10px;
+    
+}
+
+.date{
+    font:12px/18px Arial, sans-serif;
+    /*bottom:1px;*/
+    padding-bottom:1px;
+    height:20px;
+    width:100%;
+    margin-right:5px;
+/*     padding-right:3px; */
+/*     padding-left:3px; */
+    text-align:right;
+    color:#A9A9A9;
+}
+.clear{
+    width:40px;
+    height:40px;
+    float:right;
+    margin-right:2%;
+    padding:5px;
+}
+.clear .trash{
+    width:100%;
+    height:100%;
+    font-size:30px;
+    color:white;
+}
+.clear .trash i{
+    margin:5px 9px;
+    cursor:pointer;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Timsgr</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="main.css"> 
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="on_load()">
+    <div class="global_chat">   
+        <div class="chat">
+            <div class="body">
+            
+                <div class="messages">
+                    <div class="history" id="history" >
+                        <div class="replasement" id="re_history">
+                        </div>
+                    </div>
+                </div>
+                <div class="input">
+                    <div class="text_field">
+                        <div class="left">
+                            <textarea id="input_msg" placeholder="Type the message here!"></textarea>
+                        </div>
+                        <div class="right">
+                            <div class="button" onclick="send_message()">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="title">
+                <div class="profile" id="short_profile" onclick="show_profile()">
+                    <div class="right">
+                        <div class="name">
+                           <label id="my_name"> </label>
+                        </div>
+                    </div>
+                    <div class="avatar_div">
+                        <img id="myava"></img>
+                    </div>
+                </div>
+                <div class="clear">
+                    <div class="trash">
+                        <i class="fa fa-trash-o" onclick="del_history()" title="clear history"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="profile_settings" id="profile_settings">
+                <div class="photo_settings">
+                    <div class="photo">
+                        <img id="my_big_ava"></img>
+                    </div>
+                    <div class="remove">
+                        <i class="fa fa-trash" aria-hidden="true" title="remove photo" onclick="remove_photo()"></i>
+                    </div>
+                    <div class="change">
+                        <input type="file" id="fileElem" multiple accept="image/*" class="upload_file" onchange="change_ava(this.files)">
+                        <label  class="fa fa-camera" for="fileElem" title="change photo"></label>
+                    </div>
+                </div>
+                <div class="information">
+                    <div class="name">
+                        <label id="my_name1"></label>
+                    </div>
+                    <div class="id">
+                        id: <br> 
+                        <label id="my_id"></label>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="friends_list">
+        <div class="title">
+            <div class="right">
+            <i class="fa fa-address-card icon" aria-hidden="true"></i>
+            </div>
+            <div class="left">
+                <div class="search">
+                    <div class="left">
+                        <input class="input" id="new_friend_name" placeholder="Search friend"></input> 
+                    </div>
+                    <div class="right">
+                        <a class="fa fa-search a" aria-hidden="true" href="javascript:search_friend()"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content" id="friends">
+            
+        </div>
+    </div>
+        
+    <div class="block_display" id="popup" style="display: none;">
+        <div class="add_menu">
+            <div class ="left">
+                <div class="place_img">
+                    <img class="img" id="img_new_friend" alt="name"></img>
+                </div>
+            </div>
+            <div class="right">
+                <div class="cross">
+                    <a class="fa fa-times but" aria-hidden="true" href="javascript:PopUpHide()"></a>
+                </div>
+                <div class="content">
+                    <div class="inp">
+                        <input class="inhash" id="inhash" placeholder="Enter ID"></input>
+                    </div>
+                    <div class="button" onclick="add_friend_click()">
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<html>
