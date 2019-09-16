@@ -2,7 +2,7 @@
 
 Secure Internet Messenger
 
-I wrote this when I was 16 as a Computer Science class final project for my hight school. Do not judge the code - I was young and new to Software Development. It was the first big project I have done.
+I wrote this when I was 16 as a Computer Science class final project for my hight school. Do not judge the code - I was young and new to programming. It was my first big project I have done.
 
 ### Technologies used
 
@@ -30,5 +30,5 @@ I wrote this when I was 16 as a Computer Science class final project for my high
 
 ### Refferences
 
-Thanks to the guys that contribute to opensource so I could use Node, NW, Electron, and Node-RSA...
-Thanks to the guys from Fontawesome - thay have amaizing collection of icons | https://fontawesome.com/
+Thanks to the guys that contribute to opensource projects so I could use Node, NW, Electron, and Node-RSA...
+Thanks to the guys from Fontawesome - they have amaizing collection of icons | https://fontawesome.com/
